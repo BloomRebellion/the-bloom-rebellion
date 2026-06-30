@@ -221,3 +221,108 @@ section {
     padding: 80px 0;
   }
 }
+
+/* About page additions */
+.page-header {
+  padding: 180px 0 60px;
+  background-color: var(--emerald);
+  color: var(--cream);
+  text-align: center;
+}
+
+.page-header h1 {
+  color: var(--cream);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.container.narrow {
+  max-width: 760px;
+}
+
+.container.centered {
+  text-align: center;
+}
+
+.section-alt {
+  background-color: var(--sage);
+}
+
+blockquote.quote {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: var(--forest);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.body-lg {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: var(--charcoal);
+}
+
+.section-subhead {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.section-eyebrow.centered {
+  text-align: center;
+}
+
+.styled-list {
+  list-style: none;
+  margin: 32px 0;
+}
+
+.styled-list li {
+  padding: 14px 0 14px 32px;
+  position: relative;
+  border-bottom: 1px solid var(--sage);
+  font-size: 1.05rem;
+}
+
+.styled-list li::before {
+  content: '🌿';
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.principle-card {
+  background-color: var(--cream);
+  padding: 40px 28px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.principle-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.principle-card p {
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+#join-cta {
+  text-align: center;
+}
+
+#join-cta .btn {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+}
